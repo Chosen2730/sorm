@@ -8,24 +8,23 @@ import Link from "next/link";
 import { services } from "../../utils/data";
 import { useGlobalContext } from "../../utils/context";
 import { useEffect, useRef } from "react";
-import style from "../../styles/gen.module.css";
+// import style from "../../styles/gen.module.css";
 
 const Services = () => {
-  const serve = useRef("");
+  const serve = useRef(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const newArr = Array.from(serve.current.children);
-      const mapArr = newArr.map((arr) => {
-        arr.classList.add(style.hide);
-        arr.classList.add(style.service);
-        const id = arr.dataset.id;
-        const height = arr.getBoundingClientRect().top;
-        if (height < 200) {
-          arr.classList.add(style.show);
-        }
-      });
-    });
+    // window.addEventListener("scroll", () => {
+    //   const newArr = Array.from(serve.current.children);
+    //   newArr.map((arr) => {
+    //     arr.classList.add(style.hide);
+    //     arr.classList.add(style.service);
+    //     const height = arr.getBoundingClientRect().top;
+    //     if (height < 200) {
+    //       arr.classList.add(style.show);
+    //     }
+    //   });
+    // });
   }, []);
 
   const {
@@ -46,7 +45,7 @@ const Services = () => {
         className='my-10 grid sm:grid-cols-3 gap-6 gap-y-10 w-full md:w-5/6 md:mx-auto'
         ref={serve}
       >
-        <div className={serviceContainer} data-id='one'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <BiDevices />
           </i>
@@ -56,7 +55,7 @@ const Services = () => {
             <button className={btnStyle}>View More</button>
           </Link>
         </div>
-        <div className={serviceContainer} data-id='two'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <VscSymbolInterface />
           </i>
@@ -66,7 +65,7 @@ const Services = () => {
             <button className={btnStyle}>View More</button>
           </Link>
         </div>
-        <div className={serviceContainer} data-id='three'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <MdDesignServices />
           </i>
@@ -76,7 +75,7 @@ const Services = () => {
             <button className={btnStyle}>View More</button>
           </Link>
         </div>
-        <div className={serviceContainer} data-id='four'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <BsLaptop />
           </i>
@@ -86,7 +85,7 @@ const Services = () => {
             <button className={btnStyle}>View More</button>
           </Link>
         </div>
-        <div className={serviceContainer} data-id='five'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <AiFillMobile />
           </i>
@@ -96,7 +95,7 @@ const Services = () => {
             <button className={btnStyle}>View More</button>
           </Link>
         </div>
-        <div className={serviceContainer} data-id='six'>
+        <div className={serviceContainer}>
           <i className={iconStyle}>
             <SiAzuredevops />
           </i>

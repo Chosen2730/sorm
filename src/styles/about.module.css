@@ -1,7 +1,8 @@
 .about_img {
   position: relative;
   z-index: 1;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  width: 90%;
 }
 
 .about_img::before {
@@ -27,4 +28,19 @@
   transform: translate(40%, -40%);
   z-index: 2;
   opacity: 0.6;
+}
+.about_header {
+  background: linear-gradient(rgba(243, 75, 8, 0.9), rgba(243, 75, 8, 0.9)),
+    url("/images/nine.png");
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2rem;
+  align-items: center;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

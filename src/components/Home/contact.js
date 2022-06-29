@@ -61,7 +61,7 @@ const Contact = () => {
               rows='10'
             ></textarea>
             <button type='submit' className={btnStyle}>
-              Read More
+              Submit
             </button>
           </form>
         </div>

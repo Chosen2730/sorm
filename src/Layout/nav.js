@@ -6,7 +6,10 @@ import { IoMdClose } from "react-icons/io";
 function Nav() {
   const [nav, setNav] = React.useState(false);
   return (
-    <nav className='p-4 capitalize w-full flex flex-col md:flex-row md:justify-between'>
+    <nav
+      className='p-4 capitalize w-full flex flex-col md:flex-row md:justify-between'
+      onClick={() => setNav(!nav)}
+    >
       <div className='flex justify-between items-center w-full md:w-1/3'>
         <img className='w-1/3 md:w-1/2' src='./images/logo2.png' alt='logo' />
         <i onClick={() => setNav(!nav)}>
@@ -26,7 +29,7 @@ function Nav() {
         <hr className='md:hidden border-b-1 border-solid border-red-200' />
         <Link href='/'>Services</Link>
         <hr className='md:hidden border-b-1 border-solid border-red-200' />
-        <Link href='/'>About Us</Link>
+        <Link href='/about'>About Us</Link>
         <hr className='md:hidden border-b-1 border-solid border-red-200' />
         <Link href='/'>Contact us</Link>
         <hr className='md:hidden border-b-1 border-solid border-red-200' />
