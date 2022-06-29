@@ -13,7 +13,7 @@ const About = () => {
     h2Style,
   } = useGlobalContext();
   return (
-    <main className='px-4 py-8'>
+    <main className='px-4 py-8 sm:w-5/6 mx-auto'>
       <h2 className={h2Style}>About Us</h2>
       <hr className={line} />
       <div className='grid flex-col gap-x-4 p-4  items-center sm:grid-cols-2'>

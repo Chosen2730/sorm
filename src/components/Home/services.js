@@ -20,7 +20,7 @@ const Services = () => {
   } = useGlobalContext();
 
   return (
-    <main>
+    <main className='px-4 py-8'>
       <h2 className={h2Style}>Our Services</h2>
       <hr className={line} />
       <div className='my-10 grid sm:grid-cols-3 gap-6 gap-y-10 w-full md:w-5/6 md:mx-auto'>
