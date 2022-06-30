@@ -6,8 +6,8 @@ const About = () => {
   return (
     <main>
       <div className={style.about_header}>
-        <h2 className='text-3xl md:text-5xl font-bold leading-normal capitalize'>
-          A result-oriented, customer-centric creative digital agency.
+        <h2 className='text-4xl md:text-5xl font-bold leading-normal capitalize text-center'>
+          A result-oriented, customer-centric <br /> creative digital agency.
         </h2>
 
         <p className='text-sm my-4'>
@@ -16,7 +16,7 @@ const About = () => {
           Technologies!
         </p>
       </div>
-      <div className='my-8 flex flex-col gap-0 sm:gap-8 p-4 py-8 sm:flex-row-reverse w-5/6 mx-auto'>
+      <div className='my-8 flex flex-col gap-0 sm:gap-8 p-4 py-8 sm:flex-row-reverse sm:w-5/6 mx-auto'>
         <div className={style.about_img}>
           <img
             className='w-full h-80 object-cover'
@@ -46,7 +46,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='grid gap-0 sm:gap-8 p-4  sm:grid-cols-2 py-8 my-8 w-5/6 mx-auto'>
+      <div className='grid gap-0 sm:gap-8 p-4  sm:grid-cols-2 py-8 my-8 sm:w-5/6 mx-auto'>
         <div className={style.about_img}>
           <img
             className='w-full h-80 object-cover'
