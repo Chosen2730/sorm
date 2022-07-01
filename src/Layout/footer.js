@@ -7,11 +7,11 @@ const Footer = () => {
   return (
     <main className='bg-black text-gray-200 p-4'>
       <div className='grid sm:grid-cols-2 my-4 gap-4 sm:flex-row'>
-        <img className='w-1/3 sm:w-1/2' src='images/logo1.png' alt='' />
+        <img className='w-1/3 sm:w-1/2' src='images/logo3.png' alt='' />
         <div className='grid grid-cols-2'>
           <div>
-            <h2 className='text-xl font-bold text-gray-300'>Company</h2>
-            <div className='flex flex-col text-gray-200 text-sm gap-2'>
+            <h2 className='text-sm font-bold text-gray-300'>Company</h2>
+            <div className='flex flex-col text-gray-200 text-xs gap-2 mt-3'>
               <Link href='/'>Home</Link>
               <Link href='/about'>About</Link>
               <Link href='/'>Services</Link>
@@ -19,8 +19,8 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h2 className='text-xl font-bold text-gray-300'>Services</h2>
-            <div className='flex flex-col text-gray-200 text-sm gap-2'>
+            <h2 className='text-sm font-bold text-gray-300'>Services</h2>
+            <div className='flex flex-col text-gray-200 text-xs gap-2 mt-3'>
               <Link href='/'>Graphics Design</Link>
               <Link href='/'>Web Development</Link>
               <Link href='/'>Product Design</Link>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h4 className='mt-20 text-sm'>
+      <h4 className='mt-20 text-xs'>
         Subscribe to our newsletters and updates
       </h4>
       <div className='bg-white p-2 my-1 sm:w-1/2'>
@@ -50,7 +50,7 @@ const Footer = () => {
         <hr className='border-1 w-full' />
         <div className='h-5 w-5 bg-white rounded-full'></div>
       </div>
-      <p className='text-sm text-center'>
+      <p className='text-xs text-center'>
         Sorm Platform {new Date().getFullYear()}. All right reserved
       </p>
     </main>
