@@ -6,7 +6,7 @@ const About = () => {
   return (
     <main>
       <div className={style.about_header}>
-        <h2 className='text-5xl font-bold leading-normal capitalize text-center'>
+        <h2 className='text-3xl sm:text-5xl font-bold leading-normal capitalize text-center'>
           A result-oriented, customer-centric <br /> creative digital agency.
         </h2>
 
