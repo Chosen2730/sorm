@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../../utils/context";
 import style from "../../styles/about.module.css";
+import Link from "next/link";
 
 const About = () => {
   const {
@@ -27,13 +28,14 @@ const About = () => {
         <div>
           <h4 className={h4Style}>Get to know us</h4>
           <p className={contentStyle}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            officia accusamus quibusdam! Temporibus repellat cumque, quia animi
-            eligendi voluptatibus ipsum. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ut, quod amet. Illo quam incidunt maxime aperiam
-            explicabo magnam, deserunt optio?
+            We are a digital marketing & tech agency hybrid in Nigeria committed
+            to taking your business to the next level. We are a team of
+            experienced talents dedicated to the use of technology and proven
+            marketing strategies for brand growth and business development.
           </p>
-          <button className={btnStyle}>Read More</button>
+          <Link href='about'>
+            <button className={btnStyle}>Read More</button>
+          </Link>
         </div>
       </div>
       <div className='-mx-4 bg-orange-100 p-4 py-8 md:flex'>
