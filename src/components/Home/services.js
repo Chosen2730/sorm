@@ -55,7 +55,7 @@ const Services = () => {
       </div>
       <div className='sm:w-5/6 mx-auto -mt-8'>
         <Link href='services'>
-          <button className={`${btnStyle}`}>See More Services</button>
+          <button className={`${btnStyle} p-3`}>See More Services</button>
         </Link>
       </div>
     </main>
