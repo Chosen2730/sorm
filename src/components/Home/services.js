@@ -8,24 +8,9 @@ import Link from "next/link";
 import { services } from "../../utils/data";
 import { useGlobalContext } from "../../utils/context";
 import { useEffect, useRef } from "react";
-// import style from "../../styles/gen.module.css";
 
 const Services = () => {
   const serve = useRef(null);
-
-  useEffect(() => {
-    // window.addEventListener("scroll", () => {
-    //   const newArr = Array.from(serve.current.children);
-    //   newArr.map((arr) => {
-    //     arr.classList.add(style.hide);
-    //     arr.classList.add(style.service);
-    //     const height = arr.getBoundingClientRect().top;
-    //     if (height < 200) {
-    //       arr.classList.add(style.show);
-    //     }
-    //   });
-    // });
-  }, []);
 
   const {
     serviceContainer,
@@ -51,9 +36,6 @@ const Services = () => {
           </i>
           <h4 className={h4Style}>{services[0].title}</h4>
           <p className={contentStyle}>{services[0].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
         </div>
         <div className={serviceContainer}>
           <i className={iconStyle}>
@@ -61,50 +43,20 @@ const Services = () => {
           </i>
           <h4 className={h4Style}>{services[1].title}</h4>
           <p className={contentStyle}>{services[1].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
         </div>
-        <div className={serviceContainer}>
-          <i className={iconStyle}>
-            <MdDesignServices />
-          </i>
-          <h4 className={h4Style}>{services[2].title}</h4>
-          <p className={contentStyle}>{services[2].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
-        </div>
-        <div className={serviceContainer}>
-          <i className={iconStyle}>
-            <BsLaptop />
-          </i>
-          <h4 className={h4Style}>{services[3].title}</h4>
-          <p className={contentStyle}>{services[3].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
-        </div>
+
         <div className={serviceContainer}>
           <i className={iconStyle}>
             <AiFillMobile />
           </i>
           <h4 className={h4Style}>{services[4].title}</h4>
           <p className={contentStyle}>{services[4].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
         </div>
-        <div className={serviceContainer}>
-          <i className={iconStyle}>
-            <SiAzuredevops />
-          </i>
-          <h4 className={h4Style}>{services[5].title}</h4>
-          <p className={contentStyle}>{services[5].content}</p>
-          <Link href=''>
-            <button className={btnStyle}>View More</button>
-          </Link>
-        </div>
+      </div>
+      <div className='sm:w-5/6 mx-auto -mt-8'>
+        <Link href='services'>
+          <button className={`${btnStyle}`}>See More Services</button>
+        </Link>
       </div>
     </main>
   );

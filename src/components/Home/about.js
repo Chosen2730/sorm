@@ -4,15 +4,7 @@ import style from "../../styles/about.module.css";
 import Link from "next/link";
 
 const About = () => {
-  const {
-    serviceContainer,
-    iconStyle,
-    h4Style,
-    contentStyle,
-    btnStyle,
-    line,
-    h2Style,
-  } = useGlobalContext();
+  const { h4Style, contentStyle, btnStyle, line, h2Style } = useGlobalContext();
   return (
     <main className='px-4 py-8 sm:w-5/6 mx-auto'>
       <h2 className={h2Style}>About Us</h2>
